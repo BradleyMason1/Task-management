@@ -12,6 +12,7 @@ public class Main{
         System.out.println("2. Delete task");
         System.out.println("3. View all tasks");
         System.out.println("4. Exit");
+        System.out.println();
 
 
         
