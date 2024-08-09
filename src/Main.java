@@ -1,19 +1,20 @@
+import java.util.Scanner;
+
 public class Main{
     public static void main(String[] args){
         TaskManagement taskManager = new TaskManagement();
-        Task task1 = new Task("Groceries for the week", "8/10/24", "Fill the fridge back up");
-        Task task2 = new Task("Finish project", "9/7/24", "Finish the task management project");
+        boolean running = true;
+        Scanner scanner = new Scanner(System.in);
 
-        taskManager.addTask(task1);
-        taskManager.addTask(task2);
-        System.out.println("All tasks: ");
-        taskManager.updateTitle(task1, "Weekly grocieries");
-        taskManager.updateDueDate(task1, "8/15/24");
+        while(running){
+        System.out.println("Task Management System ");
+        System.out.println("1. Add task");
+        System.out.println("2. Delete task");
+        System.out.println("3. View all tasks");
+        System.out.println("4. Exit");
 
-        taskManager.deleteTask(task2);
-        System.out.println("Tasks after deletion");
-        taskManager.displayTasks();
-        System.out.println();
+
+        
 
 
     }
