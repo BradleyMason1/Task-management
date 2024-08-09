@@ -13,6 +13,7 @@ public class Main{
         taskManager.deleteTask(task2);
         System.out.println("Tasks after deletion");
         taskManager.displayTasks();
+        System.out.println();
 
 
     }
